@@ -98,7 +98,7 @@ function App() {
           {livros.map((livro) => {
             return (
               <tr>
-                <td>{generatePassword(setCodigo)}</td>
+                <td>{generatePassword()}</td>
                 <td>{livro.titulo}</td>
                 <td>{livro.autor}</td>
                 <td>
