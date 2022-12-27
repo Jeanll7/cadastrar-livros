@@ -28,7 +28,7 @@ function App() {
     });
   }
 
-  function generatePassword() {
+  function generatePassword(codigo) {
     return Math.floor(Math.random() * 30 + 1);
   }
 
@@ -90,15 +90,15 @@ function App() {
             <th>codigo</th>
             <th>titulo</th>
             <th>autor</th>
-            <th>Ação</th>
+            <th>Excluir</th>
             <th></th>
           </tr>
         </thead>
         <tbody>
-          {livros.map((livro, codigo) => {
+          {livros.map((livro) => {
             return (
               <tr>
-                <td>{generatePassword(livro.codigo)}</td>
+                <td>{generatePassword(setCodigo)}</td>
                 <td>{livro.titulo}</td>
                 <td>{livro.autor}</td>
                 <td>

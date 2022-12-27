@@ -15,10 +15,6 @@
     margin: 3rem 0 1rem;
 }
 
-label {
-    margin-left: 5px;
-}
-
 input {
     display: flex;
     margin-top: 3px;
@@ -32,7 +28,7 @@ input {
 }
 
 .inputArea p {
-    margin-left: 5px;
+    margin-left: 4px;
 }
 
 button {
@@ -61,14 +57,14 @@ button {
 
 tbody .icon-trash {
     margin-top: 10px;
-    margin-bottom: -15px;
-    margin-left: 5px;
     cursor: pointer;
     background-color: transparent;
 }
 
-th {
-    text-align: start;
+th,
+td {
+    text-align: center;
+    justify-content: space-between;
     border-bottom: 1px solid #115050;
     padding-bottom: 5px;
 }
